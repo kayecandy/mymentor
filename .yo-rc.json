@@ -1,0 +1,58 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.hc.mymentor",
+      "nativeLanguage": "de"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "monolith",
+    "baseName": "mymentor",
+    "packageName": "com.hc.mymentor",
+    "packageFolder": "com/hc/mymentor",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MWI3NTI5NTUwNjFjOTg4ZWIwMjVkMTIxYjIyYjk1ZmI1YjZiODM0ZDRjNTE4MjkyMWFhZDQyZTBjZjE5NjI2M2FiOTQwNDZkOTdiOGE1NjJhOTVmZjAzYzc2OWMyZDMyMDFmYjU5NjQ1MDgwMjVlZWFmYmJkM2Q2ZTBiNDc4OTI=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.2.0"
+      }
+    ],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "de",
+    "languages": ["de", "en"],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.2.0"
+      }
+    ]
+  },
+  "generator-jhipster-vuejs": {
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "mymentor",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "vue",
+    "clientTheme": "litera",
+    "clientThemeVariant": "primary"
+  }
+}
