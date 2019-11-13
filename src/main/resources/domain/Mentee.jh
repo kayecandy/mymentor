@@ -1,0 +1,140 @@
+/**
+ * The field country will be ignored at first, becouse at the beginning we will only operate in Germany.
+ */
+entity Address {
+	street String required maxlength(127)
+    streetNumber String required maxlength(7)
+    secondLine String maxlength(127)
+    /** For the beginning we only let german postcodes. */
+    postcode String required maxlength(10)
+    city String required maxlength(127)
+}
+
+entity Language {
+    name String required maxlength(127)
+}
+
+entity Company {
+    name String maxlength(127)
+	description String maxlength(1023)
+    url String maxlength(255)
+}
+
+relationship OneToOne {
+	Company{address(city)} to Address
+}
+
+/**
+ * This entity represent an educational institution, like a school or university.
+ */
+entity EduInstitution {
+    name String maxlength(127)
+	description String maxlength(1023)
+    url String maxlength(255)
+}
+
+relationship OneToOne {
+	EduInstitution{address(city)} to Address
+}
+
+/**
+* This entity represent a certificate.
+*/
+entity Certificate {
+    name String required maxlength(127)
+    issueDate LocalDate required
+    expireDate LocalDate
+    url String maxlength(255)
+}
+
+relationship ManyToOne {
+	/** Issuing Institution.*/
+	Certificate{institution(name) required} to EduInstitution
+}
+
+/**
+* This entity represent a Job that the mentee hab in his or her career.
+* All the career stones of a mentee combined represent his work experience.
+*/
+entity CareerStone {
+    title String required maxlength(127)
+	fromDate LocalDate required
+    toDate LocalDate
+    stillWorkingHere Boolean
+    location String
+    description String maxlength(1023)
+}
+
+relationship ManyToOne {
+	CareerStone{company(name)} to Company
+}
+
+/**
+ * This class represents an education of the mentee.
+ * For example Bachelor of Sience in London from 2018 till 2012.
+ */
+entity EduStone {
+    degree String required maxlength(127)
+	grade String maxlength(31)
+    fromDate LocalDate required
+    /** Ended or expected to end.*/
+    toDate LocalDate required
+    description String maxlength(1023)
+    activities String maxlength(1023)
+}
+
+relationship ManyToOne {
+	EduStone{school(name)} to EduInstitution
+}
+
+enum SkillType {
+	INDUSTRY_KNOWLEDGE,
+    TOOLS_TECHNOLOGIES,
+    INTERPERSONAL,
+    OTHER
+}
+
+entity Skill {
+    name String required maxlength(127)
+    type SkillType required
+ 	description String maxlength(1023)
+}
+
+entity PossessedSkill {
+ 	topSkill Boolean
+}
+
+relationship ManyToOne {
+	PossessedSkill{skill(name)} to Skill
+}
+
+
+entity Mentee {
+	mobilePhone String
+    landline String
+    profileVisibleInInternet Boolean
+    ownWebsiteUrl String maxlength(255)
+    xingProfileUrl String maxlength(255)
+    linkedInProfileUrl String maxlength(255)
+}
+
+relationship OneToOne {
+    Mentee{user(login)} to User with jpaDerivedIdentifier
+    Mentee{address} to Address
+}
+
+relationship OneToMany {
+	Mentee{careerStones(title)} to CareerStone
+    Mentee{eduStones(degree)} to EduStone
+    Mentee{certificates(name)} to Certificate
+    Mentee{languages(name)} to Language
+}
+
+relationship ManyToMany {
+	Mentee{possessedSkill(skill)} to PossessedSkill{mentees}
+}
+
+
+dto * with mapstruct
+service * with serviceClass
+search * with elasticsearch except Address, Certificate
