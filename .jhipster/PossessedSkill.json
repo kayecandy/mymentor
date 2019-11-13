@@ -1,0 +1,37 @@
+{
+    "name": "PossessedSkill",
+    "fields": [
+        {
+            "fieldName": "topSkill",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "skill",
+            "otherEntityRelationshipName": "possessedSkill",
+            "relationshipName": "skill",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "mentee",
+            "otherEntityRelationshipName": "possessedSkill",
+            "relationshipName": "mentees",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191113213504",
+    "entityTableName": "possessed_skill",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

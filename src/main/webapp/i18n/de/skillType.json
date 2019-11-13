@@ -1,0 +1,11 @@
+{
+  "mymentorApp": {
+    "SkillType": {
+      "null": "",
+      "INDUSTRY_KNOWLEDGE": "INDUSTRY_KNOWLEDGE",
+      "TOOLS_TECHNOLOGIES": "TOOLS_TECHNOLOGIES",
+      "INTERPERSONAL": "INTERPERSONAL",
+      "OTHER": "OTHER"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "mymentorApp": {
+    "eduStone": {
+      "home": {
+        "title": "Edu Stones",
+        "createLabel": "Create a new Edu Stone",
+        "createOrEditLabel": "Create or edit a Edu Stone",
+        "search": "Search for Edu Stone",
+        "notFound": "No Edu Stones found"
+      },
+      "created": "A new Edu Stone is created with identifier {{ param }}",
+      "updated": "A Edu Stone is updated with identifier {{ param }}",
+      "deleted": "A Edu Stone is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Edu Stone {{ id }}?"
+      },
+      "detail": {
+        "title": "Edu Stone"
+      },
+      "degree": "Degree",
+      "grade": "Grade",
+      "fromDate": "From Date",
+      "toDate": "To Date",
+      "description": "Description",
+      "activities": "Activities",
+      "school": "School",
+      "mentee": "Mentee",
+      "help": {
+        "toDate": "Ended or expected to end."
+      }
+    }
+  }
+}

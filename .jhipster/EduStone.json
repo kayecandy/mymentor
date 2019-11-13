@@ -1,0 +1,80 @@
+{
+    "name": "EduStone",
+    "fields": [
+        {
+            "fieldName": "degree",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 127
+        },
+        {
+            "fieldName": "grade",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 31
+        },
+        {
+            "fieldName": "fromDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "toDate",
+            "javadoc": "Ended or expected to end.",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1023
+        },
+        {
+            "fieldName": "activities",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1023
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "eduInstitution",
+            "otherEntityRelationshipName": "eduStone",
+            "relationshipName": "school",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipName": "mentee",
+            "otherEntityName": "mentee",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191113213502",
+    "javadoc": "This class represents an education of the mentee.\\nFor example Bachelor of Sience in London from 2018 till 2012.",
+    "entityTableName": "edu_stone",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

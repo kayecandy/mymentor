@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Mentee.
+    -->
+    <changeSet id="20191113213505-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="mentee"
+                                 constraintName="fk_mentee_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="address_id"
+                                 baseTableName="mentee"
+                                 constraintName="fk_mentee_address_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="address"/>
+
+        <addForeignKeyConstraint baseColumnNames="mentee_id"
+                                 baseTableName="mentee_possessed_skill"
+                                 constraintName="fk_mentee_possessed_skill_mentee_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mentee"/>
+
+        <addForeignKeyConstraint baseColumnNames="possessed_skill_id"
+                                 baseTableName="mentee_possessed_skill"
+                                 constraintName="fk_mentee_possessed_skill_possessed_skill_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="possessed_skill"/>
+        
+    </changeSet>
+</databaseChangeLog>

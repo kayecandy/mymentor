@@ -1,0 +1,62 @@
+{
+    "name": "Certificate",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 127
+        },
+        {
+            "fieldName": "issueDate",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "expireDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 255
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "eduInstitution",
+            "otherEntityRelationshipName": "certificate",
+            "relationshipValidateRules": "required",
+            "javadoc": "Issuing Institution.",
+            "relationshipName": "institution",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipName": "mentee",
+            "otherEntityName": "mentee",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191113213500",
+    "javadoc": "This entity represent a certificate.",
+    "entityTableName": "certificate",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": false
+}

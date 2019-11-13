@@ -42,6 +42,22 @@ public class CacheConfiguration {
             createCache(cm, com.hc.mymentor.domain.User.class.getName());
             createCache(cm, com.hc.mymentor.domain.Authority.class.getName());
             createCache(cm, com.hc.mymentor.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.hc.mymentor.domain.Address.class.getName());
+            createCache(cm, com.hc.mymentor.domain.Language.class.getName());
+            createCache(cm, com.hc.mymentor.domain.Company.class.getName());
+            createCache(cm, com.hc.mymentor.domain.EduInstitution.class.getName());
+            createCache(cm, com.hc.mymentor.domain.Certificate.class.getName());
+            createCache(cm, com.hc.mymentor.domain.CareerStone.class.getName());
+            createCache(cm, com.hc.mymentor.domain.EduStone.class.getName());
+            createCache(cm, com.hc.mymentor.domain.Skill.class.getName());
+            createCache(cm, com.hc.mymentor.domain.PossessedSkill.class.getName());
+            createCache(cm, com.hc.mymentor.domain.PossessedSkill.class.getName() + ".mentees");
+            createCache(cm, com.hc.mymentor.domain.Mentee.class.getName());
+            createCache(cm, com.hc.mymentor.domain.Mentee.class.getName() + ".careerStones");
+            createCache(cm, com.hc.mymentor.domain.Mentee.class.getName() + ".eduStones");
+            createCache(cm, com.hc.mymentor.domain.Mentee.class.getName() + ".certificates");
+            createCache(cm, com.hc.mymentor.domain.Mentee.class.getName() + ".languages");
+            createCache(cm, com.hc.mymentor.domain.Mentee.class.getName() + ".possessedSkills");
             // jhipster-needle-ehcache-add-entry
         };
     }

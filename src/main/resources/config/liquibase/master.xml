@@ -14,6 +14,24 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213456_added_entity_Address.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213457_added_entity_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213458_added_entity_Company.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213459_added_entity_EduInstitution.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213500_added_entity_Certificate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213501_added_entity_CareerStone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213502_added_entity_EduStone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213503_added_entity_Skill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213504_added_entity_PossessedSkill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213505_added_entity_Mentee.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20191113213457_added_entity_constraints_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213458_added_entity_constraints_Company.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213459_added_entity_constraints_EduInstitution.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213500_added_entity_constraints_Certificate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213501_added_entity_constraints_CareerStone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213502_added_entity_constraints_EduStone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213504_added_entity_constraints_PossessedSkill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191113213505_added_entity_constraints_Mentee.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

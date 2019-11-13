@@ -1,0 +1,27 @@
+{
+  "mymentorApp": {
+    "certificate": {
+      "home": {
+        "title": "Certificates",
+        "createLabel": "Certificate erstellen",
+        "createOrEditLabel": "Certificate erstellen oder bearbeiten",
+        "notFound": "No Certificates found"
+      },
+      "created": "Certificate erstellt mit ID {{ param }}",
+      "updated": "Certificate aktualisiert mit ID {{ param }}",
+      "deleted": "Certificate gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Certificate {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Certificate"
+      },
+      "name": "Name",
+      "issueDate": "Issue Date",
+      "expireDate": "Expire Date",
+      "url": "Url",
+      "institution": "Institution",
+      "mentee": "Mentee"
+    }
+  }
+}

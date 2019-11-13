@@ -1,0 +1,42 @@
+{
+    "name": "Skill",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 127
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "SkillType",
+            "fieldValues": "INDUSTRY_KNOWLEDGE,TOOLS_TECHNOLOGIES,INTERPERSONAL,OTHER",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1023
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191113213503",
+    "entityTableName": "skill",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": "elasticsearch"
+}

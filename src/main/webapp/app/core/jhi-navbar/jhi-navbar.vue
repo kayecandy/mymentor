@@ -26,6 +26,46 @@
                         <font-awesome-icon icon="th-list" />
                         <span v-text="$t('global.menu.entities.main')">Entities</span>
                     </span>
+                    <b-dropdown-item to="/entity/address">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.address')">Address</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/language">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.language')">Language</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/company">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.company')">Company</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/edu-institution">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.eduInstitution')">EduInstitution</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/certificate">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.certificate')">Certificate</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/career-stone">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.careerStone')">CareerStone</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/edu-stone">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.eduStone')">EduStone</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/skill">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.skill')">Skill</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/possessed-skill">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.possessedSkill')">PossessedSkill</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/entity/mentee">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.mentee')">Mentee</span>
+                    </b-dropdown-item>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown

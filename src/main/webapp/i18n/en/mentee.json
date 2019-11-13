@@ -1,0 +1,35 @@
+{
+  "mymentorApp": {
+    "mentee": {
+      "home": {
+        "title": "Mentees",
+        "createLabel": "Create a new Mentee",
+        "createOrEditLabel": "Create or edit a Mentee",
+        "search": "Search for Mentee",
+        "notFound": "No Mentees found"
+      },
+      "created": "A new Mentee is created with identifier {{ param }}",
+      "updated": "A Mentee is updated with identifier {{ param }}",
+      "deleted": "A Mentee is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mentee {{ id }}?"
+      },
+      "detail": {
+        "title": "Mentee"
+      },
+      "mobilePhone": "Mobile Phone",
+      "landline": "Landline",
+      "profileVisibleInInternet": "Profile Visible In Internet",
+      "ownWebsiteUrl": "Own Website Url",
+      "xingProfileUrl": "Xing Profile Url",
+      "linkedInProfileUrl": "Linked In Profile Url",
+      "user": "User",
+      "address": "Address",
+      "careerStones": "Career Stones",
+      "eduStones": "Edu Stones",
+      "certificates": "Certificates",
+      "languages": "Languages",
+      "possessedSkill": "Possessed Skill"
+    }
+  }
+}

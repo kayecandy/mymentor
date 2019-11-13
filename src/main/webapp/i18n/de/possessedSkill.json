@@ -1,0 +1,25 @@
+{
+  "mymentorApp": {
+    "possessedSkill": {
+      "home": {
+        "title": "Possessed Skills",
+        "createLabel": "Possessed Skill erstellen",
+        "createOrEditLabel": "Possessed Skill erstellen oder bearbeiten",
+        "search": "Suche nach Possessed Skill",
+        "notFound": "No Possessed Skills found"
+      },
+      "created": "Possessed Skill erstellt mit ID {{ param }}",
+      "updated": "Possessed Skill aktualisiert mit ID {{ param }}",
+      "deleted": "Possessed Skill gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Possessed Skill {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Possessed Skill"
+      },
+      "topSkill": "Top Skill",
+      "skill": "Skill",
+      "mentees": "Mentees"
+    }
+  }
+}

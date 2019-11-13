@@ -25,6 +25,16 @@ import AlertService from '@/shared/alert/alert.service';
 import TranslationService from '@/locale/translation.service';
 import ConfigurationService from '@/admin/configuration/configuration.service';
 
+import AddressService from '@/entities/address/address.service';
+import LanguageService from '@/entities/language/language.service';
+import CompanyService from '@/entities/company/company.service';
+import EduInstitutionService from '@/entities/edu-institution/edu-institution.service';
+import CertificateService from '@/entities/certificate/certificate.service';
+import CareerStoneService from '@/entities/career-stone/career-stone.service';
+import EduStoneService from '@/entities/edu-stone/edu-stone.service';
+import SkillService from '@/entities/skill/skill.service';
+import PossessedSkillService from '@/entities/possessed-skill/possessed-skill.service';
+import MenteeService from '@/entities/mentee/mentee.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 Vue.config.productionTip = false;
@@ -82,6 +92,16 @@ new Vue({
     metricsService: () => new MetricsService(),
     alertService: () => alertService,
     translationService: () => translationService,
+    addressService: () => new AddressService(),
+    languageService: () => new LanguageService(),
+    companyService: () => new CompanyService(),
+    eduInstitutionService: () => new EduInstitutionService(),
+    certificateService: () => new CertificateService(),
+    careerStoneService: () => new CareerStoneService(),
+    eduStoneService: () => new EduStoneService(),
+    skillService: () => new SkillService(),
+    possessedSkillService: () => new PossessedSkillService(),
+    menteeService: () => new MenteeService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService
   },

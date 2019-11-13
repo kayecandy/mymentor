@@ -1,0 +1,26 @@
+{
+  "mymentorApp": {
+    "eduInstitution": {
+      "home": {
+        "title": "Edu Institutions",
+        "createLabel": "Edu Institution erstellen",
+        "createOrEditLabel": "Edu Institution erstellen oder bearbeiten",
+        "search": "Suche nach Edu Institution",
+        "notFound": "No Edu Institutions found"
+      },
+      "created": "Edu Institution erstellt mit ID {{ param }}",
+      "updated": "Edu Institution aktualisiert mit ID {{ param }}",
+      "deleted": "Edu Institution gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Edu Institution {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Edu Institution"
+      },
+      "name": "Name",
+      "description": "Description",
+      "url": "Url",
+      "address": "Address"
+    }
+  }
+}

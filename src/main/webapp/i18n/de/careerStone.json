@@ -1,0 +1,30 @@
+{
+  "mymentorApp": {
+    "careerStone": {
+      "home": {
+        "title": "Career Stones",
+        "createLabel": "Career Stone erstellen",
+        "createOrEditLabel": "Career Stone erstellen oder bearbeiten",
+        "search": "Suche nach Career Stone",
+        "notFound": "No Career Stones found"
+      },
+      "created": "Career Stone erstellt mit ID {{ param }}",
+      "updated": "Career Stone aktualisiert mit ID {{ param }}",
+      "deleted": "Career Stone gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Career Stone {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Career Stone"
+      },
+      "title": "Title",
+      "fromDate": "From Date",
+      "toDate": "To Date",
+      "stillWorkingHere": "Still Working Here",
+      "location": "Location",
+      "description": "Description",
+      "company": "Company",
+      "mentee": "Mentee"
+    }
+  }
+}
