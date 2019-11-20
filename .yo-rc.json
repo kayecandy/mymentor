@@ -4,7 +4,7 @@
       "packageName": "com.hc.mymentor",
       "nativeLanguage": "de"
     },
-    "jhipsterVersion": "6.3.1",
+    "jhipsterVersion": "6.4.1",
     "applicationType": "monolith",
     "baseName": "mymentor",
     "packageName": "com.hc.mymentor",
@@ -43,7 +43,9 @@
         "name": "generator-jhipster-vuejs",
         "version": "1.2.0"
       }
-    ]
+    ],
+    "herokuAppName": "mymentor-1",
+    "herokuDeployType": "git"
   },
   "generator-jhipster-vuejs": {
     "jhipsterVersion": "6.4.1",
@@ -53,6 +55,8 @@
     "clientPackageManager": "npm",
     "clientFramework": "vue",
     "clientTheme": "litera",
-    "clientThemeVariant": "primary"
+    "clientThemeVariant": "primary",
+    "enableTranslation": true,
+    "languages": ["de", "en"]
   }
 }
