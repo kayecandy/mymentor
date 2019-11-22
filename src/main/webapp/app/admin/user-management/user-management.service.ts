@@ -3,7 +3,7 @@ import Vue from 'vue';
 import buildPaginationQueryOpts from '@/shared/sort/sorts';
 
 export default class UserManagementService {
-  public get(userId: number): Promise<any> {
+  public get(userId: any): Promise<any> {
     return axios.get(`api/users/${userId}`);
   }
 
