@@ -19,6 +19,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
+
+  background: #fafafa;
 }
 
 a {
@@ -31,6 +33,10 @@ a:hover {
   font-weight: bold;
   /* make sure browsers use the pointer cursor for anchors, even with no href */
   cursor: pointer;
+}
+
+.btn {
+  border-radius: 10rem;
 }
 
 /* ==========================================================================
