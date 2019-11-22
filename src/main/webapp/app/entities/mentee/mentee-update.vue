@@ -62,7 +62,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-control-label" v-text="$t('mymentorApp.mentee.address')" for="mentee-address">Address</label>
+                        <label class="form-control-label" v-text="$t('mymentorApp.mentee.address')" for="mentee-address">Address</label>}
                         <select class="form-control" id="mentee-address" name="address" v-model="mentee.addressId">
                             <option v-bind:value="null"></option>
                             <option v-bind:value="addressOption.id" v-for="addressOption in addresses" :key="addressOption.id">{{addressOption.id}}</option>
@@ -71,7 +71,8 @@
                     <div class="form-group">
                         <label v-text="$t('mymentorApp.mentee.possessedSkill')" for="mentee-possessedSkill">Possessed Skill</label>
                         <select class="form-control" id="mentee-possessedSkill" multiple name="possessedSkill" v-model="mentee.possessedSkills">
-                            <option v-bind:value="getSelected(mentee.possessedSkills, possessedSkillOption)" v-for="possessedSkillOption in possessedSkills" :key="possessedSkillOption.id">{{possessedSkillOption.skill}}</option>
+                            <option v-bind:value="getSelected(mentee.possessedSkills, possessedSkillOption)" v-for="possessedSkillOption in possessedSkills" :key="possessedSkillOption.id">{{possessedSkillOption.id}} {{possessedSkillOption.skillName}}</option>
+                            }
                         </select>
                     </div>
                 </div>
